@@ -1,0 +1,89 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  align-items: center;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.about__headline {
+  font-size: 64px;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+}
+
+.about__keanu {
+  -webkit-text-stroke: 1px white;
+  color: black;
+}
+
+.about__subheadline {
+  margin: 0;
+  font-family: 24px;
+}
+
+.about__body {
+  display: flex;
+  align-items: center;
+  max-width: 1028px;
+  gap: 54px;
+}
+
+.about__image {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.about__description {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about__paragraph {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  .about__body {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about__headline {
+    font-size: 24px;
+  }
+
+  .about__subheadline {
+    font-size: 16px;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__paragraph {
+    font-size: 16px;
+  }
+}
