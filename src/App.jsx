@@ -1,22 +1,17 @@
-import { useState } from 'react';
 import SimpleSidebar from './components/SimpleSidebar';
 import './App.css'
+import UseEffectDemo from './components/UseEffectDemo';
+import { useState } from 'react';
 
 function App() {
-  const [muncul, setMuncul] = useState(false);
-
-  function handleMouseOver() {
-    setMuncul(true);
-  }
-
-  function handleMouseOut() {
-    setMuncul(false);
-  }
+  const [nilai, setNilai] = useState(0);
+  const [nilaiLain, setNilaiLain] = useState(0);
 
   return (
     <div>
-      <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Munculkan</button>
-      <SimpleSidebar muncul={muncul} />
+      <button onClick={() => setNilai(nilai + 1)}>Ubah nilai</button>
+      <button onClick={() => setNilaiLain(nilaiLain + 1)}>Ubah nilai lain</button>
+      <UseEffectDemo nilai={nilai} nilaiLain={nilaiLain} />
     </div>
   )
 }
