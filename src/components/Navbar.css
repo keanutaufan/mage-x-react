@@ -1,0 +1,33 @@
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.navbar__logo {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+  .navbar__logo {
+    font-size: 24px;
+  }
+
+  .navbar__link {
+    font-size: 16px;
+  }
+}
