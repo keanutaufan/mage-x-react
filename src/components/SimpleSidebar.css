@@ -1,0 +1,34 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  transition: all 0.3s;
+}
+
+.sidebar__list {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__link {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar__muncul {
+  transform: translateX(0);
+}
+
+.sidebar__sembunyi {
+  transform: translate(-100%);
+}

@@ -1,13 +1,22 @@
+import { useState } from 'react';
+import SimpleSidebar from './components/SimpleSidebar';
 import './App.css'
-import Counter from './components/Counter'
-import CounterV2 from './components/CounterV2'
-import Slides from './components/Slides'
-import Ternary from './components/Ternary'
 
 function App() {
+  const [muncul, setMuncul] = useState(false);
+
+  function handleMouseOver() {
+    setMuncul(true);
+  }
+
+  function handleMouseOut() {
+    setMuncul(false);
+  }
+
   return (
     <div>
-      <CounterV2 />
+      <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Munculkan</button>
+      <SimpleSidebar muncul={muncul} />
     </div>
   )
 }
