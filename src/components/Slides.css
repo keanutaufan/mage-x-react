@@ -1,0 +1,43 @@
+.slides {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slides__image {
+  border-radius: 12px;
+}
+
+.slides__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(187, 187, 187);
+}
+
+.slides__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slides__text h1 {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
+.slides__text h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.slides__stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
