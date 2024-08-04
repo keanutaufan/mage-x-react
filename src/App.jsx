@@ -1,12 +1,11 @@
 import './App.css'
-import AboutPage from './pages/AboutPage'
+import { RouterProvider } from 'react-router-dom';
+import { router } from './pages/routes'
 
 
 function App() {
   return (
-    <div>
-      <AboutPage />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
